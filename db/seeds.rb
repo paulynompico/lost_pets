@@ -7,3 +7,11 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+puts "Destroying all pets"
+Pet.destroy_all
+puts "All pets destroyed"
+
+puts "Creating instances of pets"
+Pet.create!(name: "Toyo", address: "Paris", species: "dog")
+Pet.create!(name: "Neko", address: "London", species: "cat")
+puts "2 pets created"
